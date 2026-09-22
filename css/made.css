@@ -36,3 +36,20 @@
     margin-bottom: 24px;
 }
 
+.made-item::before {
+    content: '';
+    flex-shrink: 0;
+
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin-top: 5px;
+    border-radius: 50%;
+    border: 1px solid #eceded;
+    background-color: #4c4c4c;
+}
+
+.made-item {
+    display: flex;
+    gap: 8px;
+}

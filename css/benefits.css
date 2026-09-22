@@ -9,6 +9,7 @@
     gap: 88px;}
 
 .benefits-item {
+    position: relative;
     width: 308px;
 }
 
@@ -21,4 +22,33 @@
 
 .benefits-desc {
     color: rgba(255, 255, 255, 0.7);
+}
+
+.benefits-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    
+    width: 62px;
+    height: 62px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 365px;
+
+}
+
+.benefits-icon {
+
+}
+
+.benefits-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -44px;
+    transform: translateY(-50%);
+    display: block;
+    width: 1px;
+    height: 124px;
+    background-color: rgba(255, 255, 255, 0.5);
 }

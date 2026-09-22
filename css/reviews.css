@@ -3,7 +3,7 @@
 }
 
 .reviews-title {
-    
+    margin-bottom: 90px;
 }
 
 .reviews-list {
@@ -13,16 +13,22 @@
 }
 
 .reviews-item {
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 16px;
+    position: relative;
     padding: 56px 24px 24px;
     margin-bottom: 90px;
     width: calc((100% - 28px * 2) / 3);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 16px;
     box-shadow: 0 4px 10px 0 rgba(17, 17, 17, 0.1);
     background: #fff;
 }
 
-.reviews-avatar {}
+.reviews-avatar {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .reviews-author {
     margin-bottom: 24px;
