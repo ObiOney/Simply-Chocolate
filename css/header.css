@@ -1,5 +1,18 @@
 .header {
-    padding: 24px 0;    
+    padding: 18px 0;
+}
+
+@media only screen and (min-width:768px) {
+  .header {
+    padding: 20px 0;
+    
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+.main-nav {
+    display: none;   
+}
 }
 
 .header .container {
@@ -8,14 +21,25 @@
 }
 .main-nav { 
     margin-left: auto;
+    margin-right: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-nav {
     margin-right: 122px;
-    
+  }
 }
 
 .main-nav-list {
     display: flex;
     align-items: center;
+    gap: 20px;
+}
+
+@media only screen and (min-width: 1168px) {
+  .main-nav-list {
     gap: 24px;
+  }
 }
 
 .main-nav-item {
@@ -27,6 +51,8 @@
     display: block;
     padding: 11px 0; 
     font-weight: 500;
+
+
 
     transition: 300ms ease-out;
     transition-property: color;
@@ -46,4 +72,10 @@
     height: 4px;
     border-radius: 2px;
     background: #fd9222;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .header .socials {
+    display: none;
+    }
 }

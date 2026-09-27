@@ -33,8 +33,14 @@ address {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
+/* Helper class */
+/* .hide {
+    display: none !important;
+} */
 
 /*Base styles*/
 .sr-only {
@@ -51,18 +57,41 @@ img {
 }
 
 .section {
+    padding: 40px 0px;
+    
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 50px 0px;
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+    .section {
     padding: 60px 0px;
+    }
 }
 
 .section-title {
-    max-width: 412px;
-    margin:0 auto 50px;
+    max-width: 284px;
+    margin:0 auto 32px;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
+    font-size: 20px;
+    line-height: 1.2;
     letter-spacing: -0.03em;
     text-align: center;
     text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-title  
+   {
+    font-size: 24px;
+    line-height: 1.17;
+    margin: 0 auto 50px;
+    max-width: 412px;
+  }
 }
 
 .accent {
@@ -70,35 +99,53 @@ img {
 } 
 
 .container {
-    max-width: 1168px;
-    padding: 0 16px;
+    min-width: 320px;
+    max-width: 375px;
     margin: 0 auto;
-
+    padding: 0 20px;
+    
     /* outline: 2px solid red;
-    outline-offset: -2px; */
+    outline-offset: -2px;  */
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 32px;
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1168px) {
+    .container {
+        max-width: 1168px;
+        padding: 0 16px;
+    }
 }
 
 .logo {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 2px;
 
     font-weight: 700;
-    font-size: 18px;
-    line-height: 1.11;
+    font-size: 14px;
+    line-height: 1.29;
+
     letter-spacing: -0.03em;
     text-transform: uppercase;
-}
-
-.logo-icon {
 
 }
-
+@media only screen and (min-width: 1168px) {
+  .logo {
+    font-size: 18px;
+    line-height: 1.11;
+   }
+}
 /*Socials styles*/
 .socials {
     display: flex;
     gap: 14px;
-    }
+}
 
 .socials-item {
     width: 40px;
@@ -117,7 +164,7 @@ img {
     border-radius: 10px;
 
     transition: 300ms ease-out;
-        transition-property: border-color;
+    transition-property: border-color;
 }
 
 
@@ -140,17 +187,26 @@ img {
 .socials-icon {
     color: #111;
     transition: 300ms ease-out;
-        transition-property: color; 
+    transition-property: color; 
 }
 /*Button*/
 .btn {
+    padding: 12px 26px;
+    
     border-radius: 100px;
-    padding: 14px 40px;
+    
+    
     font-weight: 600;
     background-color: transparent;
-border: 1px solid transparent;
+    border: 1px solid transparent;
     transition: 300ms ease-out;
     transition-property: color, background-color, border-color;
+}
+
+@media only screen and (min-width: 1168px) {
+  .btn {
+    padding: 14px 40px;
+  }
 }
 
 .btn-filled {background-color: #fd9222; color: #fff;}
@@ -159,7 +215,6 @@ border: 1px solid transparent;
     background-color: rgba(253, 146, 34, 0.1);
     color: #fd9222;
 }
-.btn-outlined {}
 
 .primary {
     border-color: #fff;
